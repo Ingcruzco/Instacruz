@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint":"standard",
+    "vercel-build": "npm run build",
+    "lint": "standard",
     "build": "webpack",
     "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,14 +25,19 @@
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-icon": "^1.0.0",
+    "react-icons": "^3.10.0",
+    "styled-components": "^5.1.1"
   },
-  "standard":{
-    "ignore":[
+  "standard": {
+    "ignore": [
       "/dist/**"
     ]
   },
-  "eslintconfig":{
-    "extends": ["./node_modules/standard/eslintrc.json"]
+  "eslintconfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
   }
 }
